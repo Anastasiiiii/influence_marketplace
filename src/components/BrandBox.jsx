@@ -17,6 +17,7 @@ import brand12 from "../images/brands/brand12.jpg";
 
 const BrandBox = () => {
     const [selectedBrand, setSelectedBrand] = useState(null);
+    const [searchBrand, setSearchBrand] = useState("");
 
     const brands = [
         { name: "Brand 1", image: brand1 },
@@ -33,6 +34,14 @@ const BrandBox = () => {
         { name: "Brand 12", image: brand12 },
     ];
 
+    const handleSearchBrandChange = (e) => {
+        setSearchBrand(e.target.value);
+    }
+
+    const filteredBrands = brands.filter((brand) =>
+        brand.name.toLowerCase().includes(searchBrand.toLocaleLowerCase())
+    );
+
     return (
         <div className="general-bloger-search-container">
             <div className="introduction-block">
@@ -41,23 +50,35 @@ const BrandBox = () => {
                     <p>Message the Brand</p>
                 </div>
                 <div className="search">
-                    <input type="text" placeholder="Search..." />
+                    <input
+                        type="text"
+                        placeholder="Search..."
+                        value={searchBrand}
+                        onChange={handleSearchBrandChange}
+                    />
                     <button>Search</button>
                     <button id="filter">Filter</button>
                 </div>
             </div>
             <div className="bloger-box-container">
-                {brands.map((brand, index) => (
-                    <div key={index} onClick={() => setSelectedBrand(brand.name)}>
-                        <Bloger bloger={brand.image} />
-                    </div>
-                ))}
+
+                {filteredBrands.length > 0 ? (
+                    filteredBrands.map((brand, index) => (
+                        <div key={index} onClick={() => setSelectedBrand(brand)}>
+                            <Bloger bloger={brand.image} />
+                        </div>
+                    ))
+                ) : (
+                    <p>No brands with this name were found.</p>
+                )}
             </div>
             {selectedBrand && (
                 <ModalForm
-                    brandName={selectedBrand}
+                    brandName={selectedBrand.name}
+                    brandImage={selectedBrand.image}
                     onClose={() => setSelectedBrand(null)}
                 />
+                
             )}
         </div>
     );

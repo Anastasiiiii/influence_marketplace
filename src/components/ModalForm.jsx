@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/ModalForm.css";
 
-const ModalForm = ({ brandName, onClose }) => {
+const ModalForm = ({ brandName, brandImage, onClose }) => {
     const [bloggerName, setBloggerName] = useState("");
     const [message, setMessage] = useState("");
 
