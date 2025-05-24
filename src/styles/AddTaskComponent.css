@@ -1,0 +1,73 @@
+.add-task-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.add-component-container {
+  display: flex;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  max-width: 1050px;
+  width: 90%;
+  border-radius: 15px;
+  padding: 30px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.el-img {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.task-form {
+  flex: 1; /* Займає всю доступну ширину */
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 0;
+  /* Видаляємо фон і рамку */
+  background: none;
+  border: none;
+}
+
+
+.task-form input,
+.task-form textarea {
+  width: 100%;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+
+.task-form textarea {
+  height: 140px;
+  resize: none;
+}
+
+
+.task-form button {
+  align-self: flex-end;
+  background-color: #a259ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.task-form button:hover {
+  background-color: #944dff;
+}

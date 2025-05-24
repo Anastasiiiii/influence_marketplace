@@ -1,0 +1,8 @@
+:root {
+    --background-color-main: #07081D;
+    --text-color: white;
+    --business-side-bg: linear-gradient(180deg, #060826 0%, #0A0C37 49%, #121559 100%);
+    --creator-side-bg: linear-gradient(180deg, #120626 0%, #290E58 49%, #42168C 100%);
+    --business-split-side-bg: linear-gradient(90deg, #060826 0%, #0A0C37 40%, #121559 100%);
+    --creator-split-side-bg: linear-gradient(90deg, #42168C 0%, #290E58 40%, #170632 100% );
+}

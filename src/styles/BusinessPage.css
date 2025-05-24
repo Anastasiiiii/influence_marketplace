@@ -1,0 +1,23 @@
+.business-page {
+    background: var(--business-side-bg);
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0A0C37; 
+  border-radius: 10px;
+  border: 2px solid #1a1a2e; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0A0C37;
+}

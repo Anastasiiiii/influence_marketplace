@@ -1,0 +1,44 @@
+.my-tasks-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.my-tasks-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.my-tasks-container p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.my-tasks-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.my-task-item {
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.my-task-item strong {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.my-task-item em {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  margin-bottom: 6px;
+}
