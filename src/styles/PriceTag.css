@@ -1,0 +1,93 @@
+.price-tag-container {
+    background: linear-gradient(145deg, #1f1f3d, #2e2e5a);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 280px;
+    min-height: 370px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.price-tag-container:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.12);
+}
+
+.price-tag-container h2 {
+    font-size: 1.5rem;
+    color: #c7c7ff;
+    margin-bottom: 0.5rem;
+}
+
+.price-tag-container h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.price-tag-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.price-tag-container li {
+    font-size: 0.95rem;
+    margin: 0.7rem 0;
+    padding-left: 1.8rem;
+    position: relative;
+    color: #e3e3e3;
+    text-align: left;
+}
+
+.price-tag-container li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #D99E30;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.price-tag-container button {
+    width: 100%;
+    margin-top: auto;
+    background: linear-gradient(to right, #a259ff, #6a7bff);
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+
+.price-tag-container button:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .price-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price-tag-container {
+        width: 90%;
+        min-height: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    .price-tag-container button {
+        width: 100%;
+    }
+}

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Bloger from "./Bloger";
 import ModalForm from "./ModalForm";
-import "../styles/BrandBox.css";
 import brand1 from "../images/brands/brand1.jpg";
 import brand2 from "../images/brands/brand2.jpg";
 import brand3 from "../images/brands/brand3.jpg";
