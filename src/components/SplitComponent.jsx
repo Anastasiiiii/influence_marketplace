@@ -51,11 +51,11 @@ const SplitComponent = () => {
       <div className={`side business ${!isDragging ? "suggest" : ""}`}
         style={{ width: `${leftWidth}%` }}>
         <nav className="logo">
-          <h2>chillz</h2>
+          <h2>findluence</h2>
         </nav>
         <div className="creator-content">
           <h1 className="title">
-            I'm A Business Or Brand Looking To Collaborate With Creators.
+            I'm A Business.
           </h1>
         </div>
         <img src={cursorIcon} className="cursor" alt="cursor" />
@@ -77,7 +77,7 @@ const SplitComponent = () => {
         </nav>
         <div className="creator-content">
           <h1 className="title">
-            I'm A Creator Who Wants To Work With Brands And Earn.
+            I'm An Influencer.
           </h1>
         </div>
         <img src={cursorIcon} className="cursor" alt="cursor" />

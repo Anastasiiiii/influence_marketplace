@@ -4,5 +4,36 @@
     --business-side-bg: linear-gradient(180deg, #060826 0%, #0A0C37 49%, #121559 100%);
     --creator-side-bg: linear-gradient(180deg, #120626 0%, #290E58 49%, #42168C 100%);
     --business-split-side-bg: linear-gradient(90deg, #060826 0%, #0A0C37 40%, #121559 100%);
-    --creator-split-side-bg: linear-gradient(90deg, #42168C 0%, #290E58 40%, #170632 100% );
+    --creator-split-side-bg: linear-gradient(90deg, #42168C 0%, #290E58 40%, #170632 100%);
+
+    --regular-purple: #a259ff;
+
+    /*Compaign*/
+    --lime-color: #E7FF0E;
+    --bright-purple: #8338EC;
+    --light-blue: #4CB8FC;
+
+    --button-color: linear-gradient(to right, #a259ff, #6a7bff);
+
+    /*Compaign details*/
+    --bg-dark: #060826;
+    --bg-gradient: linear-gradient(135deg, #0A0C37, var(--bg-dark));
+    --text-white: #ffffff;
+    --text-muted: rgba(255, 255, 255, 0.6);
+    --text-light: rgba(255, 255, 255, 0.85);
+    --border-light: rgba(255, 255, 255, 0.2);
+    --bg-box: rgba(255, 255, 255, 0.03);
+    --bg-hover: rgba(255, 255, 255, 0.08);
+    --bg-hover-dark: rgba(255, 255, 255, 0.15);
+
+    --accent-purple: #a259ff;
+    --accent-purple-bg: rgba(162, 89, 255, 0.1);
+    --accent-green: #43ffb0;
+    --accent-green-bg: rgba(67, 255, 176, 0.1);
+    --accent-blue: #78a5ff;
+    --accent-blue-bg: rgba(120, 165, 255, 0.1);
+    --accent-orange: #ffa559;
+    --accent-orange-bg: rgba(255, 165, 89, 0.1);
+    --status-active: #2ee88e;
+    --status-inactive: #ff8080;
 }

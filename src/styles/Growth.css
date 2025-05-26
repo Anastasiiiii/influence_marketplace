@@ -1,0 +1,39 @@
+.growth-section {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+
+.growth-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.recharts-wrapper .recharts-tooltip-label {
+    color: #ffffff !important;
+}
+
+.recharts-tooltip-item {
+    color: #a259ff !important;
+    font-weight: bold;
+}
+
+.recharts-cartesian-axis-tick-value {
+    fill: #cccccc;
+    font-size: 0.9rem;
+}
+
+.recharts-tooltip-wrapper {
+    background-color: #1e1f4a;
+    border-radius: 8px;
+    padding: 6px;
+}

@@ -91,3 +91,42 @@
         width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    .price-plans {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .price-tag-container {
+        width: 100%;
+        max-width: 400px;
+        min-height: auto;
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
+        border-radius: 16px;
+    }
+
+    .price-tag-container h1 {
+        font-size: 1.7rem;
+        margin-top: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .price-tag-container h2 {
+        font-size: 1.3rem;
+    }
+
+    .price-tag-container li {
+        font-size: 0.95rem;
+        padding-left: 1.5rem;
+    }
+
+    .price-tag-container button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+    }
+}

@@ -77,3 +77,46 @@
 .modal-buttons button:hover {
     background-color: #944dff;
 }
+
+@media (max-width: 768px) {
+    .filter-modal {
+        padding: 20px;
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    .filter-modal h2 {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+    }
+
+    .filter-group {
+        margin-bottom: 16px;
+    }
+
+    .filter-group input {
+        font-size: 1rem;
+        padding: 10px 12px;
+    }
+
+    .filter-group button {
+        width: 100%;
+        margin: 6px 0;
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .modal-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        margin-top: 16px;
+    }
+
+    .modal-buttons button {
+        width: 100%;
+        margin-left: 0;
+        font-size: 1rem;
+        padding: 12px;
+    }
+}

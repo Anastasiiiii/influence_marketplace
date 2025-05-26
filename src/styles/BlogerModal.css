@@ -13,33 +13,132 @@
 
 .modal-content {
     background-color: #07081d;
-    box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.15);
     padding: 30px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 500px;
+    border-radius: 14px;
+    width: 95%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow: hidden;
     color: white;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.modal-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
+.blogger-modal-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 20px;
 }
 
-.modal-content button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #a259ff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.blogger-modal-header img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    margin-bottom: 12px;
 }
 
-.modal-content button:hover {
-    background-color: #944dff;
+.blogger-modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.blogger-modal-header p {
+    margin: 4px 0 0 0;
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+.dropdown {
+    width: 100%;
+    max-width: 320px;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #0e0f33;
+    color: white;
+}
+
+.dropdown:focus {
+    outline: none;
+    border-color: #a259ff;
+}
+
+.section-content {
+    width: 100%;
+    background-color: #101243;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.blogger-buttons-containers {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.dropdown,
+.blogger-message-button {
+    width: 200px; 
+    height: 44px;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.blogger-message-button {
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    background-color: #a259ff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogger-message-button:hover {
+    background-color: #8e3dff;
+}
+
+
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 20px;
+    }
+
+    .blogger-modal-header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .modal-content button {
+        width: 100%;
+    }
+
+    .blogger-buttons-containers {
+        flex-direction: column;
+    }
+
+    .blogger-message-button {
+        width: 100%;
+    }
 }

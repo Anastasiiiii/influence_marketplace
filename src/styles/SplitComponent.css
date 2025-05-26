@@ -162,3 +162,52 @@
   width: 100%;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .split-landing {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .side {
+    padding: 40px 20px;
+    min-height: 100vh;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .nav-links {
+    position: static;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .logo {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .cursor {
+    display: none;
+  }
+
+  .divider-handle {
+    display: none;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .creator-content {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}

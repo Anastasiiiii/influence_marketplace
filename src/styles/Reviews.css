@@ -1,0 +1,53 @@
+.reviews-container {
+    background-color: #0e0f33;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+.reviews-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review-item {
+    background-color: #101243;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.03);
+    transition: background-color 0.3s ease;
+}
+
+.review-item:hover {
+    background-color: #12165a;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.review-name {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.review-stars {
+    color: #ffd700; /* яскраво-жовті зірки */
+    font-size: 1.1rem;
+}
+
+.review-comment {
+    font-size: 0.95rem;
+    color: #cccccc;
+}

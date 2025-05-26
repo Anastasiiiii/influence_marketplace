@@ -18,19 +18,20 @@ const MyTasks = () => {
         <div className="my-tasks-container">
             <h2>My Tasks</h2>
             {myTasks.length === 0 ? (
-                <p>You haven't taken any tasks yet.</p>
+                <p className="no-tasks-message">You haven't taken any tasks yet.</p>
             ) : (
-                <ul>
+                <ul className="task-list">
                     {myTasks.map((t, i) => (
-                        <li key={i} className="my-task-item">
-                            <strong>{t.brand}</strong> <br />
-                            <em>{t.time}</em> <br />
-                            {t.text}
+                        <li key={i} className="task-item">
+                            <span className="task-date">{t.time}</span>
+                            <strong>{t.brand}</strong>
+                            <p>{t.text}</p>
                         </li>
                     ))}
                 </ul>
             )}
         </div>
+
     );
 }
 

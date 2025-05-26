@@ -42,3 +42,30 @@
     color: rgba(255, 255, 255, 0.6);
     margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .footer-left h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-links a {
+        font-size: 1rem;
+    }
+
+    .footer-right {
+        margin-top: 10px;
+        font-size: 0.8rem;
+    }
+}

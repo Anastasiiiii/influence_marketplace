@@ -21,3 +21,15 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #0A0C37;
 }
+
+@media (max-width: 768px) {
+  .business-page {
+    height: auto; 
+    padding: 20px 0; 
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+}

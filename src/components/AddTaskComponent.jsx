@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/AddTaskComponent.css";
+import "../styles/Formulas.css";
 import elImg from "../images/gold-gradient-social-media-logos.png";
 
 const AddTaskComponent = () => {

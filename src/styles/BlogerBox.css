@@ -1,6 +1,6 @@
 .general-bloger-search-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .introduction-block {
@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.introduction-block > div:first-child {
+.introduction-block>div:first-child {
   flex: 1;
 }
 
@@ -48,45 +48,93 @@
 }
 
 .introduction-block {
-    padding-left: 3vw;
+  padding-left: 3vw;
 }
 
 .introduction-block h1 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-top: 40px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-top: 40px;
 }
 
 .introduction-block p {
-    font-size: 1rem;
-    opacity: 0.85;
-    margin-top: 0.8rem;
-    line-height: 1.5;
-    max-width: 400px;
+  font-size: 1rem;
+  opacity: 0.85;
+  margin-top: 0.8rem;
+  line-height: 1.5;
+  max-width: 400px;
 }
 
 .bloger-box-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 40px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
 }
 
 .bloger-container {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bloger-img {
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .introduction-block {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    gap: 20px;
+  }
+
+  .introduction-block h1 {
+    font-size: 1.8rem;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .introduction-block p {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  .introduction-block .search {
+    width: 100%;
+    padding-right: 0;
+    padding-top: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .introduction-block .search input {
+    width: 100%;
+  }
+
+  .introduction-block .search button {
+    width: 100%;
+  }
+
+  .bloger-box-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .bloger-img {
+    width: 100%;
+    height: 100%;
+  }
 }
