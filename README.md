@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# 📢 Findluence – Influencer Marketplace Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Findluence** is a web application developed as a final project for **Warsaw IT School**. It presents a visual concept of a two-sided marketplace platform that connects **brands** with **influencers**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🎯 Project Overview
 
-### `npm start`
+Findluence allows:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Brands** to discover relevant influencers, view analytics and portfolios, send messages, and publish quick campaign tasks.
+- **Influencers** to explore available tasks and brand campaigns, review requirements, message brands, and accept offers.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 👥 User Roles
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔷 Brand
 
-### `npm run build`
+- Browse influencer profiles with analytics and portfolios  
+- Send direct messages (visible on influencer’s **Personal Page**)  
+- Post **Quick Tasks** that instantly appear on influencers’ home page  
+- Monitor influencer engagement and responses  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔶 Influencer
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- View available brand campaigns and detailed requirements  
+- Accept quick tasks (added to their **Personal Page**)  
+- Communicate with brands directly  
+- Manage accepted campaigns  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🔍 Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- 🔎 Search and filter influencers/brands by name, platform, followers, and rating  
+- 📊 Audience analytics with age and gender breakdown (powered by **Recharts**)  
+- 💬 Real-time messaging between users  
+- ⚡ Quick campaign system with task claim functionality  
+- 🧾 Separate **Personal Page** for each user type  
+- 💡 Modal windows explaining features and pricing  
+- 🔁 Pricing toggle between **Monthly** and **Yearly** plans  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🛠️ Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **React.js**  
+- **Recharts** – for data visualization  
+- **React Calendar** – for date selection components (optional)  
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 👩‍💻 Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To run the project locally:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm install
+npm install react-calendar
+npm install recharts
+npm start
